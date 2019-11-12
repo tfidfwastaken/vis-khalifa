@@ -6,6 +6,7 @@
 
     <title>Hello, world!</title>
     <link rel="stylesheet" href="../css/JSAV.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" media="screen" title="no title" charset="utf-8" />
     <link rel="stylesheet" href="../css/explainer.css" type="text/css" media="screen" title="no title" charset="utf-8" />
   </head>
   <body>
@@ -29,21 +30,28 @@
         </div>
       </header>
       <div class="content-title">
-          <h1>The Bubble Sort</h1>
+        <h1>The Bubble Sort</h1>
       </div>
       <div class="content">
-          <div class="canvas">
-            <div id="container">
-              <div class="jsavcontrols"></div>
-              <p class="jsavoutput jsavline"></p>
-            </div>
+        <div class="canvas">
+          <div id="container">
+            <div class="container-label">Live Demo</div>
+            <div class="jsavcontrols"></div>
+            <div class="jsavcanvas"></div>
+            <p class="jsavoutput jsavline"></p>
           </div>
-          <div class="inputarea">
-              <textarea rows="10" cols="80"></textarea>
+        </div>
+        <div class="inputarea">
+          <p>Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.</p>
+          <p>Insert your array below:</p>
+          <div class="inputwidth">
+            <input type="text" class="form-control" name="arrayinput">
+            <input type="button" class="btn btn-secondary" name="load_values" value="Start">
           </div>
+        </div>
       </div>
       <footer>
-          © Vis Khalifa 2019
+        © Vis Khalifa 2019
       </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
