@@ -35,10 +35,11 @@ nav, .header__title {
     color: #111;
 }
 
-.canvas {
-    float: left;
-    margin: 1rem 0 5rem 2rem;
-    width: 50%;
+.item {
+    border: 2px solid;
+    margin: 1rem;
+    padding: 2rem;
+    height: 15rem;
 }
 
 .content-title {
@@ -61,7 +62,7 @@ footer {
     text-align: center;
     height: 2.5rem;
     width: 99%;
-    position: relative;
+    position: absolute;
     bottom: 0;
 }
 
