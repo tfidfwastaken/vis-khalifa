@@ -4,17 +4,58 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>linkedlist</title>
+    <title>Hello, world!</title>
     <link rel="stylesheet" href="../css/JSAV.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+    <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+    <link rel="stylesheet" href="../css/explainer.css" type="text/css" media="screen" title="no title" charset="utf-8" />
   </head>
   <body>
-    <h1>this is a queue in linked list representation</h1>
-    <div id="container">
-      <div class="jsavcontrols"></div>
-      <p class="jsavoutput jsavline"></p>
+    <div id="page-container">
+      <header class="header">
+        <div class="main">
+          <div class="header__title">
+            <a title="Algojourney" href="/"><img src="../css/images/logo.png"></a>
+          </div>
+          <nav>
+            <ul>
+              <li class="navitem nav--active"><a href="/blog/">Blog</a></li>
+              <li class="navitem"><a href="/hacktoberfest/">Hacktoberfest</a></li>
+              <li class="navitem"><a href="/get-started/101">Getting Started</a></li>
+              <li class="navitem"><a href="/resources/">Resources</a></li>
+              <li class="navitem"><a href="/archive.html">Archive</a></li>
+              <li class="navitem"><a href="/about.html">About</a></li>
+              <li class="navitem"><a href="/contact/">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="content-title">
+        <h1>Queue Linked List</h1>
+      </div>
+      <div class="content">
+        <div class="canvas">
+          <div id="container">
+            <div class="container-label">Live Demo</div>
+            <div class="jsavcontrols"></div>
+            <div class="jsavcanvas"></div>
+            <p class="jsavoutput jsavline"></p>
+          </div>
+        </div>
+        <div class="inputarea">
+          <p> A queue is a data structure that follows FIFO</p>
+          <p> Enter Elements to add to Linked List:</p>
+          <div class="inputwidth">
+            <input type="text" class="form-control" name="arrayinput">
+            <input type="button" class="btn btn-secondary" name="load_values" value="Start">
+          </div>
+        </div>
+      </div>
+      <footer>
+        © Vis Khalifa 2019
+      </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script >
     <script src="../lib/jquery.transit.js"></script>
     <script src="../lib/raphael.js"></script>
     <script src="../build/JSAV.js"></script>
