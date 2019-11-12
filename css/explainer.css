@@ -23,12 +23,30 @@ nav, .header__title {
 
 .navitem > a {
     text-decoration: none;
+    color: #111;
 }
 
 .canvas {
     float: left;
-    margin: 2rem 0 5rem 2rem;
+    margin: 1rem 0 5rem 2rem;
     width: 50%;
+}
+
+.content-title {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.content {
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+    overflow: auto;
+}
+
+.inputarea {
+    margin-left: 55%;
+    margin-top: 1rem;
 }
 
 .jsavoutput {
