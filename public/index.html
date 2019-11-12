@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="../css/explainer.css" type="text/css" media="screen" title="no title" charset="utf-8" />
   </head>
   <body>
-    <header class="header"><div class="main">
+    <header class="header">
+      <div class="main">
         <div class="header__title">
-          <a title="Algojourney" href="/">AlgoJourney</a>
+          <a title="Algojourney" href="/"><img src="../css/images/logo.png"></a>
         </div>
-        <nav class="navigation">
+        <nav>
           <ul>
             <li class="navitem nav--active"><a href="/blog/">Blog</a></li>
             <li class="navitem"><a href="/hacktoberfest/">Hacktoberfest</a></li>
@@ -26,12 +27,14 @@
         </nav>
       </div>
     </header>
-    <div id="container">
-      <div class="jsavcontrols"></div>
-      <p class="jsavoutput jsavline"></p>
+    <div class="canvas">
+      <div id="container">
+        <div class="jsavcontrols"></div>
+        <p class="jsavoutput jsavline"></p>
+      </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script >
     <script src="../lib/jquery.transit.js"></script>
     <script src="../lib/raphael.js"></script>
     <script src="../build/JSAV.js"></script>
