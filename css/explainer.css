@@ -1,0 +1,13 @@
+body {
+    font: 400 1rem/1.6 "Public Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+}
+
+.navitem {
+    display: inline;
+    height: 5rem;
+    margin: .5rem .5rem 0 1rem;
+}
+
+.navitem > a {
+    text-decoration: none;
+}
