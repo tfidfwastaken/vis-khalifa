@@ -36,7 +36,6 @@
         <div class="canvas">
           <div id="container">
             <div class="container-label">Live Demo</div>
-            <div class="jsavcontrols"></div>
             <div class="jsavcanvas"></div>
             <p class="jsavoutput jsavline"></p>
           </div>
@@ -44,9 +43,18 @@
         <div class="inputarea">
           <p> A queue is a data structure that follows FIFO</p>
           <p> Enter Elements to add to Linked List:</p>
+          <form>
+            <div class="form-group">
+              <select class="form-control" id="sel1" style="max-width:30%;">
+                <option>Enqueue</option>
+                <option>Dequeue</option>
+                <option>Clear</option>
+              </select>
+            </div>
+          </form>
           <div class="inputwidth">
-            <input type="text" class="form-control" name="arrayinput">
-            <input type="button" class="btn btn-secondary" name="load_values" value="Start">
+            <input type="text" class="form-control" id="arrayinput">
+            <input type="button" class="btn btn-secondary" id="load_values" value="Run">
           </div>
         </div>
       </div>
@@ -60,6 +68,8 @@
     <script src="../lib/raphael.js"></script>
     <script src="../build/JSAV.js"></script>
     <script src="../js/queue_ll.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
   </body>
 </html>

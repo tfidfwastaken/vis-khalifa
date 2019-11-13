@@ -1,37 +1,37 @@
 //still need to add user input
 
+var btn = document.getElementById('load_values');
+var opt = document.getElementById('sel1');
+var inputline = document.getElementById('arrayinput');
 var av = new JSAV("container");
 var l = av.ds.list({nodegap: 70});
 
-av.umsg("We start by creating a queue and adding an element \"1\"");
-l.layout();
-l.addLast(1);
-av.displayInit();
-av.step()
+opt.addEventListener("change", (e) => {
+	if(e.target.value != "Enqueue") {
+		console.log(e.target.value);
+		inputline.disabled = true;
+	} else {
+		inputline.disabled = false;
+	}
+});
 
-av.umsg("Add a new item \"2\" to the queue");
-l.addLast(2, {edgeLabel: "e1" });
-l.layout();
-av.step();
+btn.addEventListener("click", startVis);
 
-av.umsg("Add a new item \"3\" to the queue");
-l.addLast(3, {edgeLabel: "e2" });
-l.layout();
-av.step();
-
-av.umsg("Remove an item from the queue");
-l.removeFirst();
-l.layout();
-av.step();
-
-av.umsg("Remove an item from the queue");
-l.removeFirst();
-l.layout();
-av.step();
-
-av.umsg("Empty Queue");
-l.removeFirst();
-l.layout();
-av.step();
-
-av.recorded();
+function startVis(e) {
+	if (opt.value == "Enqueue") {
+		l.addLast(Number(inputline.value));
+		l.layout();
+		av.umsg("Add a new item to the queue");
+		av.displayInit();
+	} else if (opt.value == "Dequeue") {
+		l.removeFirst();
+		l.layout();
+		av.umsg("Remove an item from the queue");
+		av.displayInit();
+	} else {
+		l.clear();
+		av.umsg("Clearing the queue");
+		av.displayInit();
+	}
+	av.recorded();
+}
