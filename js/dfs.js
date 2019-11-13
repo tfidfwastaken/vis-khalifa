@@ -44,6 +44,7 @@ function startVis(e){
     jsav.label("Layered graph layout")
     var g = initGraph({layout: "layered"});
     document.getElementById('arrayinput').disabled = true;
+    document.getElementById('no_elements').disabled = true;
     g.layout();
     jsav.displayInit();
     // hide the "other" graph
@@ -55,18 +56,20 @@ function startVis(e){
       jsav.umsg("Add node " + node.value() + " to the DFS search tree");
       if (prev) {
         node.edgeFrom(prev).css("stroke", "red"); // highlight
-        node.edgeTo(prev).css("stroke", "red"); // highlight
+        node.edgeTo(prev).css("stroke", "red");
+        node.edgeTo(prev).css("stroke-width", "3px"); 
       }
       jsav.step();
     };
     var visit = function(node) {
       node.addClass("visited");
       jsav.umsg("Call DFS for node " + node.value());
+      node.css("border","2px solid red");
       jsav.step();
     };
     var postVisit = function(node) {
       node.addClass("finished");
-      node.css("background-color","green");
+      node.css("background-color","chartreuse");
       jsav.umsg("Done with node " + node.value());
       jsav.step();
     };
