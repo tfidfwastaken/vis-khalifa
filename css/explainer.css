@@ -11,6 +11,11 @@ body {
     background-color: #f8edb285;
 }
 
+::selection {
+    background-color: rgba(192, 75, 41, 0.6);
+    color: #111;
+}
+
 header {
     padding-top: 1.7rem;
     background-color: #A82424;
