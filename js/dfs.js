@@ -41,7 +41,7 @@ function startVis(e){
     //var l2 = jsav.label("Default automatic graph layout")
     //var g2 = initGraph({layout: "automatic"});
     //g2.layout();
-    jsav.label("Layered graph layout")
+    //jsav.label("Layered graph layout")
     var g = initGraph({layout: "layered"});
     document.getElementById('arrayinput').disabled = true;
     document.getElementById('no_elements').disabled = true;
