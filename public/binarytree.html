@@ -7,7 +7,7 @@
     <title>Hello, world!</title>
     <link rel="stylesheet" href="../css/JSAV.css" type="text/css" media="screen" title="no title" charset="utf-8" />
     <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" media="screen" title="no title" charset="utf-8" />
-    <link rel="stylesheet" href="../css/home.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+    <link rel="stylesheet" href="../css/explainer.css" type="text/css" media="screen" title="no title" charset="utf-8" />
   </head>
   <body>
     <div id="page-container">
@@ -30,30 +30,22 @@
         </div>
       </header>
       <div class="content-title">
-        <h1>Visualise algorithms interactively.</h1>
-        <p>Algojourney is an interactive visualiser for common CS data structures and algorithms. Because the best way to learn is hands-on.</p>
+        <h1>Binary Search Tree</h1>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            <div class="item">Bubble Sort</div>
-          </div>
-          <div class="col-sm">
-            <div class="item">Bubble Sort</div>
-          </div>
-          <div class="col-sm">
-            <div class="item">Bubble Sort</div>
+      <div class="content">
+        <div class="canvas">
+          <div id="container">
+            <div class="container-label">Live Demo</div>
+            <div class="jsavcontrols"></div>
+            <div class="jsavcanvas"></div>
+            <p class="jsavoutput jsavline"></p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm">
-            <div class="item">Bubble Sort</div>
-          </div>
-          <div class="col-sm">
-            <div class="item">Bubble Sort</div>
-          </div>
-          <div class="col-sm">
-            <div class="item">Bubble Sort</div>
+        <div class="inputarea">
+          <p>bst is a tree with blah blah blah</p>
+          <div class="inputwidth">
+            <input type="text" class="form-control" id="arrayinput">
+            <input type="button" class="btn btn-secondary" id="load_values" value="Start">
           </div>
         </div>
       </div>
@@ -66,7 +58,7 @@
     <script src="../lib/jquery.transit.js"></script>
     <script src="../lib/raphael.js"></script>
     <script src="../build/JSAV.js"></script>
-    <script src="../js/bubblesort.js"></script>
+    <script src="../js/binarytree.js"></script>
 
   </body>
 </html>
