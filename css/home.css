@@ -77,8 +77,8 @@ footer {
     text-align: center;
     height: 2.5rem;
     width: 99%;
-    position: relative;
-    bottom: 0;
+    position: absolute;
+    bottom: 1.5rem;
 }
 
 .inputarea {
