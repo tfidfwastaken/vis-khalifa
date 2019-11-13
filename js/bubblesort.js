@@ -1,17 +1,19 @@
 var btn = document.getElementById('load_values');
+var inputline = document.getElementById('arrayinput');
 var av = new JSAV("container");
 var inputarr = [];
 var arr = null;
 
-btn.onclick = startVis;
+btn.addEventListener("click", startVis);
 
 function startVis(e) {
-    inputarr = document.getElementById('arrayinput').value.split(' ').map(Number);
-    if(arr) {
-        arr.clear();
-        av.clearumsg();
-    }
-    console.log(inputarr);
+    this.value = "Try another input";
+    this.removeEventListener("click", startVis);
+    this.addEventListener("click", e => {
+        window.location.reload(false);
+    });
+    inputarr = inputline.value.split(' ').map(Number);
+    inputline.disabled = true;
     arr = av.ds.array(inputarr, {indexed: true});
     var i, j;
     av.displayInit();
