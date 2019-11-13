@@ -69,7 +69,7 @@ function startVis(e){
     };
     var postVisit = function(node) {
       node.addClass("finished");
-      node.css("background-color","chartreuse");
+      node.css("background-color","#F8EDB2");
       jsav.umsg("Done with node " + node.value());
       jsav.step();
     };
