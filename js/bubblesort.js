@@ -25,12 +25,14 @@ function startVis(e) {
             arr.highlight([j, j + 1]);
             av.step();
             if(arr.value(j) > arr.value(j+1)) {
-                av.umsg("j is greater than j+1, so swapping");
+                av.umsg("arr[j] is greater than arr[j+1], so swapping");
                 av.step();
                 arr.swap(j, j + 1);
                 av.step();
             }
         }
     }
+    arr.unhighlight(true);
+    av.umsg("Done sorting.");
     av.recorded();
 }
