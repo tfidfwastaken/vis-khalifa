@@ -24,32 +24,13 @@ function startVis(e){
     	//alert(input_edges[i][2]);//alert(a);
     	g.addEdge(x[input_edges[i][0]],x[input_edges[i][2]]);
       }
-      /*var a = g.addNode("A"),
-          b = g.addNode("B"),
-          c = g.addNode("C"),
-          d = g.addNode("D"),
-          e = g.addNode("E"),
-          f = g.addNode("F");
-      g.addEdge(a, b);
-      g.addEdge(a, c);
-      g.addEdge(b, d);
-      g.addEdge(e, a);
-      g.addEdge(d, e);
-      g.addEdge(d, f);*/
       return g;
      };
-    //var l2 = jsav.label("Default automatic graph layout")
-    //var g2 = initGraph({layout: "automatic"});
-    //g2.layout();
-    //jsav.label("Layered graph layout")
     var g = initGraph({layout: "layered"});
     document.getElementById('arrayinput').disabled = true;
     document.getElementById('no_elements').disabled = true;
     g.layout();
     jsav.displayInit();
-    // hide the "other" graph
-    //g2.hide();
-    //l2.hide();
     jsav.step();
     var preVisit = function(node, prev) {
       node.addClass("processing");
