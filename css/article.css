@@ -7,3 +7,22 @@
     text-decoration: none;
     color: #fff;
 }
+
+.btn {
+    margin-top: 0.9rem;
+    background-color: #C04B29;
+    border-color: #A82424;
+}
+
+.btn:hover {
+    background-color: #A82424;
+}
+
+.btn:active {
+    background-color: #A82424;
+}
+
+.btn:focus {
+    box-shadow: 0 0 15px rgba(200, 100, 100, 0.8);
+}
+
