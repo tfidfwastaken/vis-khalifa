@@ -1,0 +1,9 @@
+.article-wrap {
+    max-width: 40vw;
+    margin: 0 auto;
+}
+
+.navitem > a {
+    text-decoration: none;
+    color: #fff;
+}
