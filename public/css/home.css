@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700,800&display=swap');
+
+body {
+    font: 400 1.1rem/1.6 "Work Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+    color: #44423c;
+    background-color: #f8edb285;
+}
+
+::selection {
+    background-color: rgba(192, 75, 41, 0.6);
+    color: #111;
+}
+
+header {
+    padding-top: 1.7rem;
+    background-color: #A82424;
+    box-shadow: 0 0 10px grey;
+}
+
+nav, .header__title {
+    display: flex;
+    justify-content: center;
+}
+
+.header__title {
+    margin-left: 1.5rem;
+}
+
+.navitem {
+    display: inline;
+    height: 5rem;
+    margin: .5rem .5rem 0 1rem;
+}
+
+.navitem > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.canvas {
+    float: left;
+    margin: 1rem 0 5rem 2rem;
+    width: 50%;
+}
+
+.content-title {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.content-title > h1 {
+    color: #591602;;
+    display: inline-block;
+    border: 0 dotted #C04B29;
+    border-bottom-width: 6px;
+}
+
+.content {
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+    margin: 0 auto;
+    overflow: auto;
+    min-height: 70vh;
+    padding-bottom: 2.5rem;
+}
+
+footer {
+    font-size: 0.8rem;
+    text-align: center;
+    height: 2.5rem;
+    width: 99%;
+    position: absolute;
+    bottom: 1.5rem;
+}
+
+.inputarea {
+    margin-left: 55%;
+    width: 40%;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+
+.jsavoutput {
+    text-align: center;
+}
+
+.jsavcontainer {
+    min-height: 50vh;
+    box-shadow: 0 0 15px rgba(200, 100, 100, 0.4);
+    border-color: #c04b29;
+    background-color: #fff;
+    border-width: 2px;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.jsavcanvas {
+    min-width: 30%;
+    margin-top: 1rem;
+}
+
+.container-label {
+    height: 3rem;
+    line-height: 3rem;
+    padding: 0 0.8rem 0 0.5rem;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    top: 0;
+    left: 0;
+    background-color: #c04b29;
+    border-bottom-right-radius: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.inputwidth {
+    width: 30%;
+}
+
+.btn {
+    margin-top: 0.9rem;
+    background-color: #C04B29;
+    border-color: #A82424;
+}
+
+.btn:hover {
+    background-color: #A82424;
+}
+
+.btn:active {
+    background-color: #A82424;
+}
+
+.btn:focus {
+    box-shadow: 0 0 15px rgba(200, 100, 100, 0.8);
+}
+
+
+.navitem > a:hover {
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.item {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    background-color: transparent;
+    border: 2px solid #A82424;
+    margin: 1rem;
+    padding: 2rem;
+    height: 15rem;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+
+.col-sm a {
+    text-decoration: none;
+    color: unset;
+}
+
+.item > span {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: unset;
+    position: absolute;
+    opacity: 0;
+    right: 0.2rem;
+    bottom: -5%;
+    pointer-events:none;
+}
+
+.item:hover {
+    background-color: #A82424;
+    color: #fff;
+    border: 2px solid #c04b29;
+    margin: 1rem;
+    padding: 2rem;
+    height: 15rem;
+    transition: color 0.3s, transform 1s;
+    transform: scale(1.05);
+}
+
+.item:hover > span {
+    opacity: 0.3;
+    transition: 2s;
+}
