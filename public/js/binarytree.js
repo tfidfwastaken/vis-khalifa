@@ -31,7 +31,6 @@ function startVis(e) {
                 root = root.right();
             } 
         }
-        console.log(parent.value(), inputarr[i])
         if (inputarr[i] < parent.value()) {
             av.umsg("{ch} inserted to left of {pa}", {fill: {ch: inputarr[i], pa: parent.value()}});
             parent.left(inputarr[i]);
