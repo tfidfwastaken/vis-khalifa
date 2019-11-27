@@ -1,2 +1,2 @@
 # vis-khalifa
-is webtech 1 project, dont judge thx
+Web Tech 1 project to help visualize and understand algorithms. 
