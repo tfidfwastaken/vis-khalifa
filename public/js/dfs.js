@@ -8,7 +8,7 @@ function startVis(e){
     this.removeEventListener("click", startVis);
     this.addEventListener("click", e => {
         window.location.reload(false);
-        
+
     });
     var initGraph = function(opts) {
       var g = jsav.ds.graph($.extend({width: 500, height: 350}, opts));
@@ -16,13 +16,13 @@ function startVis(e){
       var x=[];
       for(var i=1; i<=arr_size;i++)
       {
-    	x[i] = g.addNode(i.toString(10));
+    	  x[i] = g.addNode(i.toString(10));
       }
       var input_edges = document.getElementById('arrayinput').value.split('\n');
       for(var i=0;i<input_edges.length;i++)
-      {  
-    	//alert(input_edges[i][2]);//alert(a);
-    	g.addEdge(x[input_edges[i][0]],x[input_edges[i][2]]);
+      {
+        y = input_edges[i].split(' ');
+    	  g.addEdge(x[y[0]],x[y[1]]);
       }
       return g;
      };
@@ -38,7 +38,7 @@ function startVis(e){
       if (prev) {
         node.edgeFrom(prev).css("stroke", "red"); // highlight
         node.edgeTo(prev).css("stroke", "red");
-        node.edgeTo(prev).css("stroke-width", "3px"); 
+        node.edgeTo(prev).css("stroke-width", "3px");
       }
       jsav.step();
     };

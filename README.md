@@ -1,2 +1,12 @@
-# vis-khalifa
-Web Tech 1 project to help visualize and understand algorithms. 
+vis-khalifa
+===========
+
+WebApp to visualize and understand algorithms with ease
+
+Algorithms visualized:
+
+-	Construction of a Binary Tree
+-	Bubble Sort
+-	Selection Sort
+-	Queues
+-	Depth First Search (DFS)
